@@ -1,0 +1,74 @@
+ 
+ @media screen and (max-width: 768px) {
+    :root{
+        --responsive-nav: rgba(3, 3, 108, 0.56);
+
+    }
+    .nav-list {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      background:whitesmoke ;
+      height: 100vh;
+      width: 300px;
+      display: grid;
+    }
+    .nav-list li {
+      
+      padding: 35px 52px;
+    }
+    button{
+        margin: 35px ;
+    }
+    .active {
+      left: 0;
+    }
+    .toggle {
+      display: grid;
+      gap: 1px;
+      padding: 0 32px;
+    }
+    .toggle .line {
+      width: 30px;
+      height: 10px;
+      background-color:var(--responsive-nav);
+      
+      
+     
+    }
+  }
+  .first-sec{
+    h1{
+        font-size: 30px;
+    }
+  }
+  
+  
+  
+   @media screen and (min-width: 768px) {
+    .nav-list {
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: capitalize;
+            
+      gap: 30px;
+        }
+        
+      
+    }
+    
+    .toggle {
+      display: none;
+    }
+  }
+  .first-sec{
+    h1{
+        font-size: 50px;
+    }
+   .first-subcon{
+    margin: 40px 0 40px 0;
+   }
+  }
+  
